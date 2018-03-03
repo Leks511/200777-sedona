@@ -5,11 +5,10 @@
 		<title>HTML Academy: Седона</title>
 	</head>
 	<body>
-		
 		<header class="page-header">
 			<div class="header-logo">
 				<a href="#">
-					<img src="http://placehold.it/139x70" alt="Главная">
+					<img src="http://placehold.it/138x70" alt="Главная">
 				</a>
 			</div>
 			<nav class="main-navigation">
@@ -27,19 +26,27 @@
 				<form class="condition-form">
 					<!-- Форма с условиями показа -->
 				</form>
-			</section class="catalog">
+			</section>
 
-			<section>
-				<p class="searched">Найдено:<span class="quantity">3</span></p>
-				<form>
-					<!-- Форма с условиями сортировки -->
-				</form>
-				<dl class="searched-list">
-					<dt>
+			<section class="catalog">
+				<section class="searched-results-and-methods">
+					<p class="searched">Найдено:<span class="quantity">3</span></p>
+					<p class="sort-word">Сортировка:</p>
+					<p class="sort-methods">
+						<a class="sort-method" href="#">По цене</a>
+						<a class="sort-method" href="#">По типу</a>
+						<a class="sort-method" href="#">По рейтингу</a>
+					</p>
+					<p class="sort-arrows">
+						<a href="#" class="sort-arrow"></a>
+						<a href="#" class="sort-arrow"></a>
+					</p>
+				</section>
+				
+				<ul class="searched-list">
+					<li class="searched-item">
+						<img src="http://placehold.it/135x90" alt="Amara Resort &amp; spa">
 						<h3 class="object-name">Amara Resort &amp; spa</h3>
-					</dt>
-					<dd>
-						<img src="http://placehold.it/135x90">
 						<table>
 							<tbody>
 								<tr>
@@ -57,13 +64,10 @@
 							<li class="star-item"></li>
 						</ul>
 						<p class="rating">Рейтинг: <span>8,5</span></p>
-					</dd>
-
-					<dt>
+					</li>
+					<li class="searched-item">
+						<img src="http://placehold.it/135x90" alt="Desert Quail Inn">
 						<h3 class="object-name">Desert Quail Inn</h3>
-					</dt>
-					<dd>
-						<img src="http://placehold.it/135x90">
 						<table>
 							<tbody>
 								<tr>
@@ -80,13 +84,10 @@
 							<li class="star-item"></li>
 						</ul>
 						<p class="rating">Рейтинг: <span>8,9</span></p>
-					</dd>
-
-					<dt>
+					</li>
+					<li class="searched-item">
+						<img src="http://placehold.it/135x90" alt="Villas at Poco Diablo">
 						<h3 class="object-name">Villas at Poco Diablo</h3>
-					</dt>
-					<dd>
-						<img src="http://placehold.it/135x90">
 						<table>
 							<tbody>
 								<tr>
@@ -102,9 +103,8 @@
 							<li class="star-item"></li>
 						</ul>
 						<p class="rating">Рейтинг: <span>9,2</span></p>
-					</dd>
-				</dl>
-
+					</li>
+				</ul>
 			</section>
 		</main>
 
@@ -122,9 +122,8 @@
 			</section>
 
 			<p class="footer-copyright">
-				Website by <a href="#"><img src="http://placehold.it/115x41"></a>
+				Website by <a href="https://up.htmlacademy.ru/htmlcss/20"><img src="http://placehold.it/115x41" alt="HTML Academy"></a>
 			</p>
 		</footer>
-
 	</body>
 </html>
