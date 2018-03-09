@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
 	</head>
-
 	<body>
 		<header class="page-header">
 			<div class="header-logo">
@@ -19,10 +18,9 @@
 				</ul>
 			</nav>
 		</header>
-
 		<main>
 			<section class="title-section">
-				<h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+				<h1 class="visually-hidden">Туризм в Седоне</h1>
 
 				<img src="img/title-img.png" width="458" height="352" alt="Sedona">
 			</section>
@@ -46,7 +44,7 @@
 							<div class="first-reason-photo"></div>
 						</li>
 					</ul>
-					
+
 					<ul class="particulars">
 						<li class="particular-item">
 							<p>
@@ -91,7 +89,7 @@
 
 				<section class="other-reasons">
 					<h3 class="visually-hidden">Остальные причины посетить Седону</h3>
-					
+
 					<ul>
 						<li class="third-reason">
 							<h4 class="reason-name">Небольшая площадь</h4>
@@ -116,9 +114,26 @@
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<button>Поиск гостиницы в Седоне</button>
-				<form class="search-form">
-					<!-- Форма поиска -->
+				<form class="search-form" action="" method="get">
+          <div class="form-part">
+            <label for="date-of-entry">ДАТА ЗАЕЗДА</label>
+            <input id="date-of-entry" type="text" name="date-of-entry" value="24 Апреля 2017">
+          </div>
+          <div class="form-part">
+            <label for="date-of-departure">ДАТА ВЫЕЗДА</label>
+            <input id="date-of-departure" type="text" name="date-of-departure" value="4 Июля 2017">
+          </div>
+          <div class="form-part">
+            <div class="form-part-half">
+              <label>ВЗРОСЛЫЕ<input type="text"></label>
+            </div>
+            <div class="form-part-half">
+              <label>ДЕТИ<input type="text"></label>
+            </div>
+          </div>
+          <input type="submit" value="НАЙТИ">
 				</form>
+
 				<section class="map">
 					<h3 class="visually-hidden">Расположение гостиницы в Седоне</h3>
 
@@ -126,7 +141,6 @@
 				</section>
 			</section>
 		</main>
-
 		<footer class="page-footer">
 			<p class="footer-hashtag">
 				#VISITSEDONA
@@ -143,7 +157,10 @@
 			</section>
 
 			<p class="footer-copyright">
-				Website by <a href="https://up.htmlacademy.ru/htmlcss/20" target="_blank"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
+				Website by
+        <a href="https://up.htmlacademy.ru/htmlcss/20" target="_blank">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+        </a>
 			</p>
 		</footer>
 	</body>
