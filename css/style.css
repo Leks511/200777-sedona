@@ -1,27 +1,45 @@
+html {
+  background-color: #f2f2f2;
+}
+
 body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;;
+  font-family: "PT Sans", "Arial", sans-serif;;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
 
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-navigation {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-
-  background-color: #ffffff;
 }
 
 .main-navigation ul {
@@ -37,11 +55,225 @@ a {
   color: #81b3d2;
 }
 
+.main-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
 .title-section {
+  text-align: center;
+
   background-color: #eeeeee;
   background-image: url("../img/title-mask.png"),
                     url("../img/background-mountains.jpg");
   background-repeat: no-repeat;
   background-position: center bottom ,center center;
   background-size: 100% 57px , cover;
+}
+
+.title-section img {
+  max-width: 458px;
+  max-height: 352px;
+}
+
+.reasons-better {
+  text-align: center;
+}
+
+.reasons-better ol,
+.reasons-better ul {
+  list-style: none;
+}
+
+.reasons-better h3,
+.reasons-better h4 {
+  font-size: 21px;
+}
+
+.reasons-better .reason-number::before,
+.reasons-better .reason-number::after {
+  background-color: #a8a8a8;
+}
+
+.first-reason,
+.second-reason {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.first-reason .reason-number::before,
+.second-reason .reason-number::after {
+  background-color: #ffffff;
+}
+
+.first-reason-photo {
+  background-image: url("../img/first-reason.jpg");
+}
+
+.second-reason-photo {
+  background-image: url("../img/second-reason.jpg");
+}
+
+.first-reason-photo,
+.second-reason-photo {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.particulars h4,
+.reason-other h3 {
+  color: #000000;
+}
+
+.particulars p,
+.reason-other p {
+  color: #333333;
+}
+
+.particular-item:first-child img {
+  width: 75px;
+  height: 72px;
+}
+
+.particular-item:nth-child(2) img {
+  width: 64px;
+  height: 76px;
+}
+
+.particular-item:nth-child(3) img {
+  width: 74px;
+  height: 70px;
+}
+
+.reason-name,
+.reason-number,
+.reason-description {
+  color: #ffffff;
+}
+
+.first-reason ul.particulars {
+  background-color: #ffffff;
+  color: inherit;
+}
+
+.reason-other {
+  background-color: #eeeeee;
+}
+
+.reason-other h4 {
+  color: #000000;
+}
+
+.hotel-search {
+  text-align: center;
+}
+
+.hotel-search h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.hotel-search p {
+  line-height: 24px;
+}
+
+.button {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.search-form label,
+.search-form input {
+  color: #000000;
+  font-weight: 700;
+}
+
+.search-form input {
+  border: 2px solid #f2f2f2;
+  outline: none;
+}
+
+.search-form input:hover {
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+  border-color: #e5e5e5;
+}
+
+.number input[type="text"] {
+  text-align: center;
+}
+
+.search-form input {
+  background-color: #f2f2f2;
+
+}
+
+.search-open {
+  background-color: #766357;
+}
+
+.search-open:hover,
+.search-open:focus {
+  background-color: #604e43;
+  outline: none;
+}
+
+.search-open:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-button {
+  background-color: #81b3d2;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #669ec0;
+  outline: none;
+}
+
+.form-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.map img {
+  width: 100%;
+}
+
+.page-footer {
+  text-align: center;
+  line-height: 26px;
+  color: #000000;
+}
+
+.footer-hashtag {
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 21px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+
+
+.footer-copyright a {
+  background-image: url("ЗДЕСЬ НУЖНО ВСТАВИТЬ СПРАЙТ");
+  background-repeat: no-repeat;
+  background-position: ;
 }
