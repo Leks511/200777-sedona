@@ -386,6 +386,15 @@ a {
   line-height: 26px;
 }
 
+.searched-item .object-name:hover,
+.searched-item .object-name:focus {
+  color: rgba(129, 179, 210, 1);
+}
+
+.searched-item .object-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .searched-item .rating {
   color: #666666;
   background-color: #f2f2f2;
