@@ -191,7 +191,7 @@ a {
 .button.search-open,
 .button.search-form-button {
   font-size: 21px;
-  font-weight: 26px;
+  line-height: 26px;
 }
 
 .button-brown {
