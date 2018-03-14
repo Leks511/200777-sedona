@@ -275,3 +275,19 @@ a {
   height: 41px;
   vertical-align: middle;
 }
+
+.current-page {
+  color: #766357;
+}
+
+.conditions-list {
+  background-color: #81b3d2;
+  background-image: url("../img/catalog-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.condition-form fieldset {
+  border: none;
+}

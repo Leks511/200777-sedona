@@ -2,12 +2,15 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 		<title>HTML Academy: Седона</title>
 	</head>
-	<body>
+	<body class="inner-page">
 		<header class="page-header">
 			<div class="header-logo">
-				<a href="#">
+				<a href="index.html">
 					<img src="img/site-logo.png" width="138" height="70" alt="Главная">
 				</a>
 			</div>
@@ -16,7 +19,7 @@
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
 					<li><a href="#">Карта Штата</a></li>
-					<li><a href="#">Гостиницы</a></li>
+					<li class="current-page">Гостиницы</li>
 				</ul>
 			</nav>
 		</header>
@@ -45,8 +48,10 @@
           <div class="price-of-housing">
             <h3>СТОИМОСТЬ В СУТКИ (Р):</h3>
             <div class="price-shower">
-              <span class="from">ОТ 0</span>
-              <span class="to">ДО 3000</span>
+              <label>От <input type="text" value="0" size="4">
+              </label>
+              <label>До <input type="text" value="3000" size="4">
+              </label>
             </div>
             <div class="range-slider">
               <div class="slider-track"></div>
