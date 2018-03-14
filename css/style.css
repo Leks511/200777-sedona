@@ -181,13 +181,47 @@ a {
 
 .button {
   text-align: center;
-  font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
   color: #ffffff;
   text-transform: uppercase;
 
   border: none;
+}
+
+.button.search-open,
+.button.search-form-button {
+  font-size: 21px;
+  font-weight: 26px;
+}
+
+.button-brown {
+  background-color: #766357;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #604e43;
+  outline: none;
+}
+
+.button-brown:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue {
+  background-color: #81b3d2;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #669ec0;
+  outline: none;
+}
+
+.button-blue:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .search-form label,
@@ -218,36 +252,6 @@ a {
 .search-form input {
   background-color: #f2f2f2;
 
-}
-
-.search-open {
-  background-color: #766357;
-}
-
-.search-open:hover,
-.search-open:focus {
-  background-color: #604e43;
-  outline: none;
-}
-
-.search-open:active {
-  background-color: #503e33;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.form-button {
-  background-color: #81b3d2;
-}
-
-.form-button:hover,
-.form-button:focus {
-  background-color: #669ec0;
-  outline: none;
-}
-
-.form-button:active {
-  background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .map img {
@@ -382,4 +386,8 @@ a {
   line-height: 26px;
 }
 
+.searched-item .rating {
+  color: #666666;
+  background-color: #f2f2f2;
+}
 
