@@ -270,10 +270,8 @@ a {
   list-style: none;
 }
 
-
-
-.footer-copyright a {
-  background-image: url("ЗДЕСЬ НУЖНО ВСТАВИТЬ СПРАЙТ");
-  background-repeat: no-repeat;
-  background-position: ;
+.footer-copyright img {
+  width: 115px;
+  height: 41px;
+  vertical-align: middle;
 }
