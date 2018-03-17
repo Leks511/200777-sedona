@@ -9,9 +9,9 @@
 	</head>
 	<body>
 		<header class="page-header">
-			<div class="header-logo">
+			<a class="header-logo">
 				<img src="img/site-logo.png" width="138" height="70" alt="Главная">
-			</div>
+			</a>
 			<nav class="main-navigation">
 				<ul>
 					<li><a href="#">Информация</a></li>
@@ -34,13 +34,12 @@
 
         <ol class="reasons-list">
           <li class="first-reason">
-            <div>
-              <h3 class="reason-name">Настоящий городок</h3>
+            <div class="reason-info">
+              <h3 class="reason-name">Настоящий<br> городок</h3>
               <p class="reason-number">№1</p>
               <p class="reason-description">СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
             <div class="first-reason-photo"></div>
-
             <ul class="particulars">
               <li class="particular-item">
                 <p>
@@ -64,28 +63,29 @@
                 <p class="particular-description">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
-
           </li>
+
           <li class="second-reason">
             <div class="second-reason-photo"></div>
-            <div>
-              <h3 class="reason-name">ТАМ ЕСТЬ Мост дьявола</h3>
+            <div class="reason-info">
+              <h3 class="reason-name">ТАМ ЕСТЬ<br> Мост дьявола</h3>
               <p class="reason-number">№2</p>
               <p class="reason-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </li>
+
           <li class="reason-other">
-            <h3 class="reason-name">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <h3 class="reason-name">НЕБОЛЬШАЯ<br> ПЛОЩАДЬ</h3>
             <p class="reason-number">№3</p>
             <p class="reason-description">ВСЕ достопримечательности находятся очень близко</p>
           </li>
           <li class="reason-other">
-            <h3 class="reason-name">КРАСИВАЯ ДОРОГА</h3>
+            <h3 class="reason-name">КРАСИВАЯ<br> ДОРОГА</h3>
             <p class="reason-number">№4</p>
             <p class="reason-description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </li>
           <li class="reason-other">
-            <h3 class="reason-name">Мало туристов</h3>
+            <h3 class="reason-name">Мало<br> туристов</h3>
             <p class="reason-number">№5</p>
             <p class="reason-description">Большинство едет в гранд каньон и толпится там</p>
           </li>
@@ -94,37 +94,43 @@
 
 			<section class="hotel-search">
 				<h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				<button class="button button-brown search-open">ПОИСК ГОСТИНИЦЫ В седоне</button>
-				<form class="search-form" action="/echo" method="get">
-          <div class="form-part">
-            <label for="date-of-entry">ДАТА ЗАЕЗДА</label>
-            <input id="date-of-entry" type="text" name="date-of-entry" value="24 Апреля 2017">
-          </div>
-          <div class="form-part">
-            <label for="date-of-departure">ДАТА ВЫЕЗДА</label>
-            <input id="date-of-departure" type="text" name="date-of-departure" value="4 июля 2017">
-          </div>
-          <div class="form-part">
-            <div class="form-part-half">
-              <label for="adults">ВзрослыЕ:</label>
-              <div class="number">
-                <span class="minus">-</span>
-                <input id="adults" type="text" value="1" size="5">
-                <span class="plus">+</span>
+				<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+
+        <div class="form-centerer">
+          <form class="search-form" action="/echo" method="get">
+            <button class="button button-brown search-open">ПОИСК ГОСТИНИЦЫ В седоне</button>
+            <div class="form-container">
+              <div class="form-part">
+                <label for="date-of-entry">ДАТА ЗАЕЗДА</label>
+                <input id="date-of-entry" type="text" name="date-of-entry" value="24 Апреля 2017">
               </div>
-            </div>
-            <div class="form-part-half">
-              <label for="children">ДетИ:</label>
-              <div class="number">
-                <span class="minus">-</span>
-                <input id="children" type="text" value="1" size="5">
-                <span class="plus">+</span>
+              <div class="form-part">
+                <label for="date-of-departure">ДАТА ВЫЕЗДА</label>
+                <input id="date-of-departure" type="text" name="date-of-departure" value="4 июля 2017">
               </div>
+              <div class="form-part">
+                <div class="form-part-half">
+                  <label for="adults">ВзрослыЕ:</label>
+                  <div class="number">
+                    <span class="minus">-</span>
+                    <input id="adults" type="text" value="1" size="5">
+                    <span class="plus">+</span>
+                  </div>
+                </div>
+                <div class="form-part-half">
+                  <label for="children">ДетИ:</label>
+                  <div class="number">
+                    <span class="minus">-</span>
+                    <input id="children" type="text" value="1" size="5">
+                    <span class="plus">+</span>
+                  </div>
+                </div>
+              </div>
+              <button class="button button-blue search-form-button" type="submit">НАЙТИ</button>
             </div>
-          </div>
-          <button class="button button-blue search-form-button" type="submit">НАЙТИ</button>
-				</form>
+          </form>
+        </div>
+
 
 				<section class="map">
 					<h3 class="visually-hidden">Расположение гостиницы в Седоне</h3>
@@ -134,11 +140,11 @@
 			</section>
 		</main>
 		<footer class="page-footer">
-			<p class="footer-hashtag">
+			<p class="footer-hashtag page-footer-item">
 				#visitSEDONA
 			</p>
 
-			<section class="footer-social">
+			<section class="footer-social page-footer-item">
 				<h3 class="visually-hidden">Мы в социальных сетях</h3>
 
 				<ul>
@@ -148,8 +154,8 @@
 				</ul>
 			</section>
 
-			<p class="footer-copyright">
-        WEBSITE by <a href="https://up.htmlacademy.ru/htmlcss/20" target="_blank"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
+			<p class="footer-copyright page-footer-item">
+        WEBSITE by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
       </p>
 		</footer>
 	</body>
