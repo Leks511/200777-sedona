@@ -44,22 +44,22 @@
             <div class="first-reason-photo"></div>
             <ul class="particulars">
               <li class="particular-item">
-                <p>
+                <p class="img-container">
                   <img src="img/icon-1.svg" width="75" height="72" alt="Жильё">
                 </p>
                 <h4 class="particular-name">Жилье</h4>
                 <p class="particular-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="particular-item">
-                <p>
-                  <img src="img/icon-2.svg" width="64" height="76" alt="Еда">
+                <p class="img-container">
+                  <img src="img/icon-3.svg" width="64" height="76" alt="Еда">
                 </p>
                 <h4 class="particular-name">ЕДА</h4>
                 <p class="particular-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="particular-item">
-                <p>
-                  <img src="img/icon-3.svg" width="74" height="70" alt="Сувениры">
+                <p class="img-container">
+                  <img src="img/icon-2.svg" width="74" height="70" alt="Сувениры">
                 </p>
                 <h4 class="particular-name">СУВЕНИРЫ</h4>
                 <p class="particular-description">Не только китайского, но и местного производства!</p>
@@ -76,17 +76,17 @@
             </div>
           </li>
 
-          <li class="reason-other">
+          <li class="reason-other reason-info">
             <h3 class="reason-name">НЕБОЛЬШАЯ<br> ПЛОЩАДЬ</h3>
             <p class="reason-number">№3</p>
             <p class="reason-description">ВСЕ достопримечательности находятся очень близко</p>
           </li>
-          <li class="reason-other">
+          <li class="reason-other reason-info">
             <h3 class="reason-name">КРАСИВАЯ<br> ДОРОГА</h3>
             <p class="reason-number">№4</p>
             <p class="reason-description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </li>
-          <li class="reason-other">
+          <li class="reason-other reason-info">
             <h3 class="reason-name">Мало<br> туристов</h3>
             <p class="reason-number">№5</p>
             <p class="reason-description">Большинство едет в гранд каньон и толпится там</p>
@@ -99,37 +99,35 @@
 				<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
         <div class="form-centerer">
+          <button class="button button-brown search-open">ПОИСК ГОСТИНИЦЫ В седоне</button>
           <form class="search-form" action="/echo" method="get">
-            <button class="button button-brown search-open">ПОИСК ГОСТИНИЦЫ В седоне</button>
-            <div class="form-container">
-              <div class="form-part">
-                <label for="date-of-entry">ДАТА ЗАЕЗДА</label>
-                <input id="date-of-entry" type="text" name="date-of-entry" value="24 Апреля 2017">
-              </div>
-              <div class="form-part">
-                <label for="date-of-departure">ДАТА ВЫЕЗДА</label>
-                <input id="date-of-departure" type="text" name="date-of-departure" value="4 июля 2017">
-              </div>
-              <div class="form-part">
-                <div class="form-part-half">
-                  <label for="adults">ВзрослыЕ:</label>
-                  <div class="number">
-                    <span class="minus">-</span>
-                    <input id="adults" type="text" value="1" size="5">
-                    <span class="plus">+</span>
-                  </div>
-                </div>
-                <div class="form-part-half">
-                  <label for="children">ДетИ:</label>
-                  <div class="number">
-                    <span class="minus">-</span>
-                    <input id="children" type="text" value="1" size="5">
-                    <span class="plus">+</span>
-                  </div>
-                </div>
-              </div>
-              <button class="button button-blue search-form-button" type="submit">НАЙТИ</button>
+            <div class="form-part">
+              <label for="date-of-entry">ДАТА ЗАЕЗДА:</label>
+              <input id="date-of-entry" type="text" name="date-of-entry" value="24 Апреля 2017">
             </div>
+            <div class="form-part">
+              <label for="date-of-departure">ДАТА ВЫЕЗДА:</label>
+              <input id="date-of-departure" type="text" name="date-of-departure" value="4 июля 2017">
+            </div>
+            <div class="form-part">
+              <div class="form-part-half">
+                <label for="adults">ВзрослыЕ:</label>
+                <div class="number">
+                  <span class="minus">-</span>
+                  <input id="adults" type="text" value="1" size="5">
+                  <span class="plus">+</span>
+                </div>
+              </div>
+              <div class="form-part-half">
+                <label for="children">ДетИ:</label>
+                <div class="number">
+                  <span class="minus">-</span>
+                  <input id="children" type="text" value="1" size="5">
+                  <span class="plus">+</span>
+                </div>
+              </div>
+            </div>
+            <button class="button button-blue search-form-button" type="submit">НАЙТИ</button>
           </form>
         </div>
 
