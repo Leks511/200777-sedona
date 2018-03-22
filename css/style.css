@@ -16,6 +16,8 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
+  box-shadow: -5px 0 15px 0 rgba(0, 1, 1, 0.2),
+              5px 0 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 body.inner-page .container {
@@ -96,6 +98,16 @@ input[type="radio"].visually-hidden {
 .site-navigation li:last-child {
   text-align: right;
 }
+
+.site-navigation li:nth-child(2) {
+  margin-left: 28px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+  margin-right: 28px;
+}
+
 
 .main-navigation a {
   color: #000000;
@@ -396,13 +408,64 @@ input[type="radio"].visually-hidden {
 
   display: flex;
   flex-wrap: wrap;
-
-  /*Временно, для сетки*/
-  background: #f2f2f2;
 }
 
-.search-form .form-part {
+.search-form .form-part.date-part {
   width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form input {
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+  width: 346px;
+  padding: 11px 13px;
+
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.search-form input:hover {
+  background-color: #ebebeb;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+  outline: 2px solid #e5e5e5;
+}
+
+.search-form input {
+  background-color: #f2f2f2;
+}
+
+.date-part {
+  position: relative;
+}
+
+.date-part .calendar {
+  position: absolute;
+  width: 21px;
+  height: 22px;
+  top: 8px;
+  right: 9px;
+}
+
+.calendar path {
+  opacity: 0.3;
+}
+
+.calendar:hover path,
+.calendar:focus path {
+  opacity: 1;
+}
+
+.calendar:active path {
+  fill: #81b3d2;
 }
 
 .search-form label,
@@ -411,28 +474,95 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-.search-form input {
-  border: 2px solid #f2f2f2;
-  text-transform: uppercase;
-  outline: none;
+.form-part.people-part {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 54px;
 }
 
-.search-form input:hover {
-  background-color: #ebebeb;
-  border-color: #ebebeb;
+.people-part .form-part-half {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.search-form input:focus {
-  background-color: #ffffff;
-  border-color: #e5e5e5;
+.people-part .form-part-half:first-child {
+  width: 226px;
+}
+
+.people-part .form-part-half:nth-child(2) {
+  width: 180px;
+}
+
+.form-part-half .number {
+  display: inline-block;
+  position: relative;
+  width: 114px;
+}
+
+.number .sprite-plus-minus {
+  position: absolute;
+  background-image: url("../img/sprite-plus-minus.png");
+  background-repeat: no-repeat;
+}
+
+.number .plus {
+  top: 14px;
+  right: 14px;
+
+  width: 11px;
+  height: 11px;
+
+  background-position: 0px -11px;
+}
+
+.number .plus:hover,
+.number .plus:focus {
+  width: 11px;
+  height: 11px;
+
+  background-position: -11px 0px;
+}
+
+.number .plus:active {
+  width: 11px;
+  height: 11px;
+
+  background-position: 0px 0px;
+}
+
+.number .minus {
+  top: 18px;
+  left: 13px;
+
+  width: 12px;
+  height: 3px;
+
+  background-position: -22px -6px;
+}
+
+.number .minus:hover,
+.number .minus:focus {
+  width: 12px;
+  height: 3px;
+
+  background-position: -22px -3px;
+}
+
+.number .minus:active {
+  width: 12px;
+  height: 3px;
+
+  background-position: -22px 0px;
 }
 
 .number input[type="text"] {
   text-align: center;
-}
 
-.search-form input {
-  background-color: #f2f2f2;
+  box-sizing: border-box;
+  width: 114px;
 }
 
 .map img {
@@ -448,14 +578,14 @@ input[type="radio"].visually-hidden {
 
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: -120px;
+  padding: 36px 0;
 
   position: relative;
 
   z-index: 10;
-
-  /*Временно, для сетки*/
-  min-height: 120px;
 }
 
 .page-footer-item {
@@ -469,8 +599,41 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
 }
 
-.footer-social ul {
+.footer-social ul.social-links {
   list-style: none;
+
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  padding: 0;
+
+
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active path {
+  opacity: 0.3;
 }
 
 .footer-copyright img {
