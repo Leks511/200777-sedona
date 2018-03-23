@@ -756,7 +756,7 @@ ul.social-links li {
   background-color: #81b3d2;
   background-image: url("../img/catalog-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
 }
 
@@ -886,6 +886,9 @@ ul.social-links li {
 
 .price-controls {
   position: relative;
+
+  display: flex;
+  justify-content: space-between;
 
   height: 36px;
   margin-bottom: 20px;
