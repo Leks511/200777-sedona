@@ -671,7 +671,7 @@ input[type="radio"].visually-hidden {
 .footer-social ul.social-links {
   list-style: none;
 
-  width: 150px;
+  max-width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,8 +681,12 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
-  margin: 0 auto;
+  margin: 5px auto 0;
   padding: 0;
+}
+
+ul.social-links li {
+  margin-bottom: 5px;
 }
 
 .social-button {
@@ -1121,6 +1125,7 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
   margin-bottom: 4px;
+  max-width: 360px
 
 }
 
@@ -1135,6 +1140,10 @@ input[type="radio"].visually-hidden {
 
 .searched-item table {
   margin-bottom: 9px;
+}
+
+td.object-type {
+  min-width: 115px;
 }
 
 .searched-item .object-button {
