@@ -447,6 +447,8 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
 
   background-color: #ffffff;
+
+  z-index: 20;
 }
 
 .search-form .form-part.date-part {
@@ -712,10 +714,16 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.footer-copyright img {
-  width: 115px;
-  height: 41px;
-  vertical-align: middle;
+.logo-link svg {
+  fill: #231f20;
+}
+
+.logo-link:hover svg {
+  fill: #81b3d2;
+}
+
+.logo-link:active svg {
+  fill: #bdbbbc;
 }
 
 .current-page {
@@ -1102,6 +1110,7 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
   margin-bottom: 4px;
+
 }
 
 .searched-item h3:hover,
