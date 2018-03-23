@@ -631,9 +631,17 @@ input[type="radio"].visually-hidden {
   width: 114px;
 }
 
-.map
+.map {
+  height: 595px;
+
+  /* background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; */
+}
 
 .map img {
+  height: 100%;
   width: 100%;
 }
 
