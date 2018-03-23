@@ -352,6 +352,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-centerer {
+  position: relative;
   width: 568px;
   margin: 0 auto;
 }
@@ -404,10 +405,14 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form {
+  position: absolute;
+
   padding: 55px;
 
   display: flex;
   flex-wrap: wrap;
+
+  background-color: #ffffff;
 }
 
 .search-form .form-part.date-part {
