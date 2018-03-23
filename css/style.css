@@ -87,6 +87,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li {
   width: 20%;
+  padding: 14px 0;
 }
 
 .site-navigation li:fisrt-child,
@@ -115,7 +116,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a {
   display: block;
-  padding: 14px 0;
 }
 
 .main-navigation a:hover,
