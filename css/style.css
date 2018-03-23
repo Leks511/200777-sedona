@@ -809,8 +809,10 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input:focus + label {
-  outline: 2px solid #81b3d2;
-  border-radius: 2px;
+  text-shadow: 5px 5px 25px #81b3d2,
+              -5px 5px 25px #81b3d2,
+              5px -5px 25px #81b3d2,
+              -5px -5px 25px #81b3d2;
 }
 
 .filter-input-checkbox + label::before {
