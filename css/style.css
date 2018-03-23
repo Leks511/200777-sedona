@@ -775,15 +775,29 @@ input[type="radio"].visually-hidden {
 
 .searched-list .searched-item {
   border-bottom: 1px solid #e5e5e5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.searched-item > .container {
+  position: relative;
 }
 
 .searched-list .searched-item:last-child {
   margin-bottom: 120px;
 }
 
-.searhced-item .object-photo {
-  width: 100%;
+.item-container img.object-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 135px;
   height: 90px;
+}
+
+.searched-item .object-info {
+  padding-left: 165px;
 }
 
 .searched-item .object-name {
