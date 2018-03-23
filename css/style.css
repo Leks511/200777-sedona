@@ -497,6 +497,10 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+.date-part .date-field {
+  padding-right: 40px;
+}
+
 .date-part .calendar {
   position: absolute;
   width: 21px;
