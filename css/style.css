@@ -55,6 +55,18 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+@keyframes slide-down {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes: slide-up {
+  to {
+    transform: translateY(-395px);
+  }
+}
+
 .container {
   padding: 0 6%;
 }
@@ -390,9 +402,12 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-search {
+  position: relative;
+  z-index: 0;
   text-align: center;
 
   padding-top: 50px;
+
 }
 
 .hotel-search h2 {
@@ -478,7 +493,12 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
 
-  z-index: 20;
+  transform: translateY(-395px);
+
+  animation-name: slide-down;
+  animation-duration: 1s;
+
+  z-index: -3;
 }
 
 .search-form .form-part.date-part {
@@ -566,7 +586,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-pack: justify;
           justify-content: space-between;
 
-  margin-bottom: 54px;
+  margin-bottom: 55px;
 }
 
 .people-part .form-part-half {
@@ -661,12 +681,26 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  height: 595px;
+  position: relative;
 
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  min-height: 595px;
+  width: 100%;
+}
+
+.map iframe {
+  position: relative;
+  z-index: -5;
+}
+
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1200px;
+  height: 593px;
+
+  z-index: -10;
 }
 
 .page-footer {
