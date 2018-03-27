@@ -6,6 +6,7 @@ openSearchFormButton.addEventListener('click', function() {
   searchForm.classList.toggle("search-form-close");
 });
 
-searchFormSubmitButton.addEventListener('click', function() {
-
+searchFormSubmitButton.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  console.log('Клик отправить')
 });
