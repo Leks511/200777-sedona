@@ -63,7 +63,7 @@ input[type="radio"].visually-hidden {
 
 @keyframes: slide-up {
   to {
-    transform: translateY(-395px);
+    transform: translateY(-100%);
   }
 }
 
@@ -444,8 +444,16 @@ input[type="radio"].visually-hidden {
 .button.search-form-button {
   font-size: 21px;
   line-height: 26px;
+  padding: 15px 15px;
+}
+
+.search-open{
+  width: 568px;
+  box-sizing: border-box;
+}
+
+.button.search-form-button {
   width: 100%;
-  padding: 15px 0;
 }
 
 .button-brown {
@@ -480,8 +488,14 @@ input[type="radio"].visually-hidden {
 
 .search-form {
   position: absolute;
+  left: 50%;
 
+  width: 458px;
   padding: 55px;
+  margin-left: -284px;
+
+  transition: 0.4s transform;
+  transform: translate(0, 0%);
 
   display: -webkit-box;
 
@@ -493,12 +507,11 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
 
-  transform: translateY(-395px);
+  z-index: 6;
+}
 
-  animation-name: slide-down;
-  animation-duration: 1s;
-
-  z-index: -3;
+.search-form-close {
+  transform: translate(0, -100%);
 }
 
 .search-form .form-part.date-part {
@@ -683,13 +696,15 @@ input[type="radio"].visually-hidden {
 .map {
   position: relative;
 
+  overflow: hidden;
+
   min-height: 595px;
   width: 100%;
 }
 
 .map iframe {
   position: relative;
-  z-index: -5;
+  z-index: 5;
 }
 
 .map img {
@@ -699,8 +714,6 @@ input[type="radio"].visually-hidden {
 
   width: 1200px;
   height: 593px;
-
-  z-index: -10;
 }
 
 .page-footer {
