@@ -26,9 +26,9 @@ openSearchFormButton.addEventListener("click", function() {
 searchForm.addEventListener("submit", function(evt) {
   if (!dateEntry.value || !dateDeparture.value || !adultsQuan.value) {
     evt.preventDefault();
+    searchForm.classList.remove("modal-error");
+    searchForm.offsetWidth = searchForm.offsetWidth;
     searchForm.classList.add("modal-error");
-    setTimeout(function(){
-    searchForm.classList.remove("modal-error");}, 350);
   } else {
     localStorage.setItem("dateEntry", dateEntry.value);
     localStorage.setItem("dateDeparture", dateDeparture.value);

@@ -135,8 +135,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
 }
 
 .main-navigation a:hover,
@@ -447,11 +446,11 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 26px;
   padding: 15px 15px;
+  box-sizing: border-box;
 }
 
 .search-open {
   width: 568px;
-  box-sizing: border-box;
 }
 
 .button.search-form-button {
@@ -731,6 +730,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
