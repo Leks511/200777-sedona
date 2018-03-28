@@ -1,20 +1,38 @@
 var openSearchFormButton = document.querySelector(".search-open");
 var searchForm = document.querySelector("form");
-var submitSearchFormButton = document.querySelector(".search-form-button");
 var dateEntry = searchForm.querySelector("[name=date-of-entry]");
 var dateDeparture = searchForm.querySelector("[name=date-of-departure]");
+var adultsQuan = searchForm.querySelector("[name=adults-quantity]");
+var childrenQuan = searchForm.querySelector("[name=children-quantity]");
 
-openSearchFormButton.addEventListener('click', function() {
+var isStorageSupport = true;
+var adultsQuanStorage = "";
+var childrenQuanStorage = "";
+
+try {
+  adultsQuanStorage = localStorage.getItem("adultsQuan");
+  childrenQuanStorage = localStorage.getItem("childrenQuan");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+openSearchFormButton.addEventListener("click", function() {
   searchForm.classList.toggle("search-form-close");
   dateEntry.focus();
+  adultsQuan.value = adultsQuanStorage;
+  childrenQuan.value = childrenQuanStorage;
 });
 
-searchForm.addEventListener("submit", function(e) {
-  e.preventDefault();
-  console.log(dateEntry.value);
-  console.log(dateDeparture.value);
-});
-
-submitSearchFormButton.addEventListener('click', function(e) {
-  console.log(searchForm);
+searchForm.addEventListener("submit", function(evt) {
+  if (!dateEntry.value || !dateDeparture.value || !adultsQuan.value) {
+    evt.preventDefault();
+    searchForm.classList.add("modal-error");
+    setTimeout(function(){
+    searchForm.classList.remove("modal-error");}, 350);
+  } else {
+    localStorage.setItem("dateEntry", dateEntry.value);
+    localStorage.setItem("dateDeparture", dateDeparture.value);
+    localStorage.setItem("adultsQuan", adultsQuan.value);
+    localStorage.setItem("childrenQuan", childrenQuan.value);
+  }
 });
