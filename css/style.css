@@ -493,7 +493,7 @@ input[type="radio"].visually-hidden {
   padding: 55px;
   margin-left: -284px;
 
-  transition: 0.4s transform;
+  transition: 0.35s transform;
   transform: translate(0, 0%);
 
   display: -webkit-box;
