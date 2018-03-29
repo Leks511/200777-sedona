@@ -1002,6 +1002,7 @@ ul.social-links li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  align-items: center;
   height: 36px;
   margin-bottom: 20px;
 
@@ -1026,10 +1027,7 @@ ul.social-links li {
 
 .price-controls label {
   font-size: 14px;
-  line-height: 38px;
-
-  display: inline-block;
-  vertical-align: top;
+  line-height: 21px;
 
   cursor: pointer;
 }
@@ -1043,6 +1041,7 @@ ul.social-links li {
 .price-controls input {
   color: inherit;
   font: inherit;
+  line-height: 21px;
 
   width: 50px;
   margin: 0;
@@ -1166,6 +1165,8 @@ ul.social-links li {
 }
 
 .sort-methods .sort-method {
+  font-size: 12px;
+  line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
 
   border-bottom-width: 1px;
@@ -1231,19 +1232,16 @@ ul.social-links li {
   margin-bottom: 120px;
 }
 
-.searched-item .object-info {
-  position: relative;
-
-  padding-left: 165px;
+.searched-item > .container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.item-container img.object-photo {
-  position: absolute;
-  top: 5px;
-  left: 0;
-
+.searched-item .object-photo {
   width: 135px;
   height: 90px;
+  margin-right: 30px;
+  margin-top: 5px;
 }
 
 .searched-item h3 {
@@ -1280,12 +1278,16 @@ td.object-type {
   margin-right: 6px;
 }
 
+.object-ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-top: 4px;
+}
+
 ul.star-list {
   text-align: right;
-
-  position: absolute;
-  top: 5px;
-  right: 0;
 
   height: 17px;
   max-width: 114px;
@@ -1307,15 +1309,9 @@ ul.star-list {
 }
 
 .searched-item .rating {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-  display: inline-block;
   max-width: 110px;
   margin: 0;
   padding: 5px 13px 6px 16px;
-  vertical-align: baseline;
 
   color: #666666;
   background-color: #f2f2f2;
