@@ -1,5 +1,5 @@
 var openSearchFormButton = document.querySelector(".search-open");
-var searchForm = document.querySelector("form");
+var searchForm = document.getElementsByClassName(".search-form")[0];
 var dateEntry = searchForm.querySelector("[name=date-of-entry]");
 var dateDeparture = searchForm.querySelector("[name=date-of-departure]");
 var adultsQuan = searchForm.querySelector("[name=adults-quantity]");
