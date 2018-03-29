@@ -16,6 +16,8 @@ try {
   isStorageSupport = false;
 }
 
+searchForm.classList.add("search-form-close");
+
 openSearchFormButton.addEventListener("click", function() {
   searchForm.classList.toggle("search-form-close");
   adultsQuan.value = adultsQuanStorage;
