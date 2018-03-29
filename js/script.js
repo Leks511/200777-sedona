@@ -18,7 +18,6 @@ try {
 
 openSearchFormButton.addEventListener("click", function() {
   searchForm.classList.toggle("search-form-close");
-  dateEntry.focus();
   adultsQuan.value = adultsQuanStorage;
   childrenQuan.value = childrenQuanStorage;
 });
