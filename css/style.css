@@ -112,7 +112,6 @@ input[type="radio"].visually-hidden {
   width: 100%;
   margin: 0;
   padding: 0;
-
 }
 
 .site-navigation li {
@@ -687,7 +686,7 @@ input[type="radio"].visually-hidden {
   width: 11px;
   height: 11px;
 
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 
 .number .minus {
@@ -1098,7 +1097,7 @@ ul.social-links li {
 }
 
 .range-toggle-min {
-  left: 0%;
+  left: 0;
 }
 
 .range-toggle-max {
@@ -1144,7 +1143,9 @@ ul.social-links li {
   padding-top: 9px;
   padding-bottom: 8px;
 
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #e5e5e5;
 }
 
 .searched-results-and-methods > .container {
