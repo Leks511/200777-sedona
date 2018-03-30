@@ -537,7 +537,7 @@ input[type="radio"].visually-hidden {
           transform: translate(0, -100%);
 }
 
-.search-form .form-part.date-part {
+.search-form .form-part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,18 +547,12 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 458px;
   margin-bottom: 30px;
 }
 
 .search-form input {
   text-transform: uppercase;
-
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 346px;
-  padding: 11px 13px;
-
   background-color: #f2f2f2;
   border: none;
   outline: none;
@@ -575,14 +569,26 @@ input[type="radio"].visually-hidden {
 
 .search-form input {
   background-color: #f2f2f2;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .date-part {
   position: relative;
 }
 
-.date-part .date-field {
-  padding-right: 40px;
+.date-part label {
+  width: 95px;
+}
+
+.date-part input {
+  height: 38px;
+  width: 346px;
+  padding-right: 53px;
+  padding-left: 13px;
+  box-sizing: border-box;
+  margin-left: 17px;
+  margin-right: 0;
 }
 
 .date-part .calendar {
@@ -712,9 +718,11 @@ input[type="radio"].visually-hidden {
 .number input[type="text"] {
   text-align: center;
 
+  padding-right: 45px;
+  padding-left: 45px;
+  width: 114px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 114px;
 }
 
 .map {
