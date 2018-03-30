@@ -120,7 +120,7 @@ input[type="radio"].visually-hidden {
   padding: 14px 0;
 }
 
-.site-navigation li:fisrt-child,
+.site-navigation li:first-child,
 .site-navigation li:nth-child(2) {
   text-align: left;
 }
